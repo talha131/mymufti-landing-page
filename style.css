@@ -6,8 +6,6 @@
     --teamMember-bg-color: #A7C4BC;
   }
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
-
 @font-face {
     font-family: NotoNastaliqUrdu;
     src: url(NotoNastaliqUrdu-Regular.ttf);
@@ -34,14 +32,18 @@ body{
 
 
 /* fonts family */
-h1, h2{
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.7rem;
+header h1, header h2{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
     margin: 0;
 }
 
-body header h1{
-    font-size: 2rem;
+header h1 {
+    font-size: 5rem;
+}
+
+header h2 {
+    font-size: 3rem;
 }
 
 p{
