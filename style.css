@@ -6,12 +6,6 @@
     --teamMember-bg-color: #A7C4BC;
   }
 
-@font-face {
-    font-family: NotoNastaliqUrdu;
-    src: url(NotoNastaliqUrdu-Regular.ttf);
-  }
-
-
 html, body {
     height: 100%;
 }
@@ -29,8 +23,6 @@ body{
     flex: 1;
 }
 
-
-
 /* fonts family */
 header h1, header h2{
     font-family: 'Libre Baskerville', serif;
@@ -46,9 +38,18 @@ header h2 {
     font-size: 3rem;
 }
 
-p{
-    font-family: NotoNastaliqUrdu;
-    font-size: 1.125rem;
+p {
+    font-family: 'Mirza', cursive;
+    font-size: 2rem;
+}
+
+p.members {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 2rem;
+}
+
+svg.members {
+    height: 256px;
 }
 
 a{
