@@ -1,0 +1,429 @@
+:root {
+    --intro-bg-color: #FFDE7D;
+    --team-bg-color: #F6416C;
+    --status-bg-color: white;
+    --contact-bg-color: #00B8A9;
+    --teamMember-bg-color: #A7C4BC;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
+
+@font-face {
+    font-family: NotoNastaliqUrdu;
+    src: url(NotoNastaliqUrdu-Regular.ttf);
+  }
+
+
+html, body {
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.status{
+    flex: 1;
+}
+
+
+
+/* fonts family */
+h1, h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+body header h1{
+    font-size: 2rem;
+}
+
+p{
+    font-family: NotoNastaliqUrdu;
+    font-size: 1.125rem;
+}
+
+a{
+    font-size: 1.125rem;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+.facebook-contact .fbGroup-link:link {
+    text-decoration: none;
+}
+
+.facebook-contact .fbGroup-link:hover{
+    color: blue;
+    opacity: 1;
+}
+
+
+/* background colors */
+body > header{
+    background-color: var(--intro-bg-color);
+    padding: 10px 0;
+}
+
+body header p{
+    margin: 0;
+    padding: 0 20px;
+}
+
+body > .team{
+    background-color: var(--team-bg-color);
+    padding: 10px 0;
+}
+
+.team header{
+    padding-bottom: 10px;
+}
+
+body > .status{
+    background-color: var(--status-bg-color);
+    padding: 0;
+}
+
+body > .contact{
+    background-color: var(--contact-bg-color);
+    padding-top: 10px;
+}
+
+.all-members {
+    background-color: var(--teamMember-bg-color);
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.contact p{
+    padding: 0 30px;
+}
+
+/* for Desktop Screen */
+@media screen and (min-width: 1024px) {
+    .team{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team > .member{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* icon for team member */
+    .imgMember{
+        margin-top: 10px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .status{
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* undercinstruction icon */
+    .status > .imgConstruction{
+        width: 200px;
+        height: 200px;
+        margin: 0 20px;
+    }
+
+    .contact .facebook-contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .facebook-contact > a > .facebook-icon{
+        font-size: 2rem;
+        color: black;
+        opacity: 0.8;
+    }
+
+    .facebook-contact > .fbGroup-link{
+        color: black;
+        padding-left: 10px;
+    }
+}
+
+/* for Tab (Landscape) */
+@media screen and (max-width: 1024px) and (min-width: 800px) {
+    .team{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team > .member{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* icon for team member */
+    .imgMember{
+        margin-top: 10px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .status{
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .status .visitor-form{
+        width: 50%;
+    }
+
+    /* undercinstruction icon */
+    .status > .imgConstruction{
+        width: 200px;
+        height: 200px;
+        margin: 0 20px;
+    }
+
+    .contact .facebook-contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .facebook-contact > a > .facebook-icon{
+        font-size: 2rem;
+        color: black;
+        opacity: 0.8;
+    }
+
+    .facebook-contact > .fbGroup-link{
+        color: black;
+        padding-left: 10px;
+    }
+}
+
+/* for Tab (Portrait) */
+@media screen and (max-width: 800px) and (min-width: 420px) {
+
+    .team{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team > .member{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .team > .member > .all-members{
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    /* icon for team member */
+    .imgMember{
+        margin-top: 10px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .status{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* undercinstruction icon */
+    .status > .imgConstruction{
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .status > .status-statement > p{
+        padding: 0 30px;
+    }
+
+
+    .status > .visitor-form{
+        width: 220px;
+    }
+
+    .contact .facebook-contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .facebook-contact > a > .facebook-icon{
+        font-size: 2rem;
+        color: black;
+        opacity: 0.8;
+    }
+
+    .facebook-contact > .fbGroup-link{
+        color: black;
+        padding-left: 10px;
+    }
+}
+
+/* for Mobile */
+@media screen and (max-width: 420px) {
+    .team{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team > .member{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .team > .member > .all-members{
+        width: 220px;
+        margin-bottom: 10px;
+    }
+
+    /* icon for team member */
+    .imgMember{
+        margin-top: 10px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .all-members p{
+        font-size: 1rem;
+    }
+
+    .status{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* undercinstruction icon */
+    .status > .imgConstruction{
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .status > .status-statement > p{
+        padding: 0 20px;
+    }
+
+    .status > .visitor-form{
+        width: 60%;
+    }
+
+    .contact .facebook-contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .facebook-contact > a > .facebook-icon{
+        font-size: 2rem;
+        color: black;
+        opacity: 0.8;
+    }
+
+    .facebook-contact > .fbGroup-link{
+        color: black;
+        padding-left: 10px;
+    }
+}
+
+/* for large screen height */
+@media screen and (min-height: 900px){
+
+    /* undercinstruction icon */
+    .status > .imgConstruction{
+        margin: 0 20px;
+    }
+
+    .status > .status-statement > p{
+        font-size: 2rem;
+    }
+
+
+    .status .visitor-form{
+        margin-left: 40px;
+    }
+
+}
+
+
+.visitor-form{
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 20px;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 6px solid #305A72;
+    width: 20%;
+}
+.visitor-form ul{
+	padding:0;
+	margin:0;
+}
+.visitor-form ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.visitor-form ul li  .field-style{
+    width: 90%;
+	padding: 8px;
+	outline: none;
+	border: 1px solid #B0CFE0;
+    border-radius: 5px;
+
+}.visitor-form ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border: 1px solid #B0CFE0;
+}
+
+.visitor-form ul li input[type="submit"] {
+	background-color: #216288;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+}
+
+.visitor-form ul li input[type="submit"]:hover {
+	background-color: #28739E;
+}
+
+.btnSubmit{
+    border-radius: 5px;
+    width: 50%;
+}
