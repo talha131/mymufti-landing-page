@@ -19,6 +19,10 @@ body{
     padding: 0;
 }
 
+.status{
+    flex: 1;
+}
+
 /* fonts family */
 header h1, header h2{
     font-family: 'Libre Baskerville', serif;
@@ -42,6 +46,7 @@ p {
 p.members {
     font-family: 'Reem Kufi', sans-serif;
     font-size: 2rem;
+    margin: 0 0 10px 0;
 }
 
 svg.members {
@@ -49,7 +54,6 @@ svg.members {
 }
 
 a{
-    font-size: 1.125rem;
     opacity: 0.7;
     font-weight: bold;
 }
@@ -76,7 +80,6 @@ body > .team{
 
 body > .status{
     background-color: var(--status-bg-color);
-    padding: 0;
 }
 
 body > .contact{
@@ -88,10 +91,6 @@ body > .contact{
     border-radius: 10px;
     padding: 0 20px;
     margin-bottom: 10px;
-}
-
-.contact p{
-    padding: 0 30px;
 }
 
 /* for Desktop Screen */
@@ -162,6 +161,9 @@ body > .contact{
 
 /* for Tab (Portrait) */
 @media screen and (max-width: 800px) and (min-width: 420px) {
+    header h1 {
+        font-size: 4rem;
+    }
 
     .team{
         display: flex;
@@ -177,7 +179,7 @@ body > .contact{
     }
 
     .team > .member > .all-members{
-        width: 250px;
+        width: 340px;
     }
 
     /* icon for team member */
@@ -194,7 +196,7 @@ body > .contact{
 
 
     .status > .visitor-form{
-        width: 220px;
+        width: 300px;
     }
 
     .contact .facebook-contact{
@@ -220,7 +222,7 @@ body > .contact{
     }
 
     .team > .member > .all-members{
-        width: 220px;
+        width: 240px;
         margin-bottom: 10px;
     }
 
@@ -240,13 +242,40 @@ body > .contact{
     }
 
     .status > .visitor-form{
-        width: 180px;
+        width: 200px;
     }
 
     .contact .facebook-contact{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+/* for small font size */
+@media screen and (max-width: 500px){
+
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 360px){
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 2rem;
+    }
+
+    .team > .member > .all-members{
+        width: 180px;
+    }
+
+    .status > .visitor-form{
+        width: 160px;
     }
 }
 
@@ -257,6 +286,11 @@ body > .contact{
     align-items: center;
     padding: 0;
     margin: 0;
+}
+
+.status .status-statement p{
+    padding: 0 30px;
+    margin: 10px 0 20px 0;
 }
 
 .facebook-contact > a > .facebook-icon{
@@ -278,11 +312,16 @@ body > .contact{
     opacity: 1;
 }
 
+.contact p{
+    padding: 0 30px;
+    margin: 0 0 10px 0;
+}
+
 
 .visitor-form{
 	background: #FAFAFA;
 	padding: 30px;
-	margin: 20px;
+	margin: 0 0 20px 0;
 	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
 	border-radius: 10px;
 	border: 6px solid #305A72;
