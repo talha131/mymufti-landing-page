@@ -80,6 +80,7 @@ body > .status{
 body > .contact{
     background-color: var(--contact-bg-color);
     padding: 10px 0;
+    height: 100%;
 }
 
 .all-members {
