@@ -19,10 +19,6 @@ body{
     text-align: center;
 }
 
-.status{
-    /* flex: 1; */
-}
-
 /* fonts family */
 header h1, header h2{
     font-family: 'Libre Baskerville', serif;
