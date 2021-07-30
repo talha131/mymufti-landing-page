@@ -19,10 +19,6 @@ body{
     padding: 0;
 }
 
-.status{
-    flex: 1;
-}
-
 /* fonts family */
 header h1, header h2{
     font-family: 'Libre Baskerville', serif;
@@ -58,16 +54,6 @@ a{
     font-weight: bold;
 }
 
-.facebook-contact .fbGroup-link:link {
-    text-decoration: none;
-}
-
-.facebook-contact .fbGroup-link:hover{
-    color: blue;
-    opacity: 1;
-}
-
-
 /* background colors */
 body > header{
     background-color: var(--intro-bg-color);
@@ -95,13 +81,13 @@ body > .status{
 
 body > .contact{
     background-color: var(--contact-bg-color);
-    padding-top: 10px;
 }
 
 .all-members {
     background-color: var(--teamMember-bg-color);
     border-radius: 10px;
     padding: 0 20px;
+    margin-bottom: 10px;
 }
 
 .contact p{
@@ -132,24 +118,12 @@ body > .contact{
 
     .status .visitor-form{
         width: 440px;
-        height: 200px;
     }
 
     .contact .facebook-contact{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .facebook-contact > a > .facebook-icon{
-        font-size: 2rem;
-        color: black;
-        opacity: 0.8;
-    }
-
-    .facebook-contact > .fbGroup-link{
-        color: black;
-        padding-left: 10px;
     }
 }
 
@@ -177,24 +151,12 @@ body > .contact{
 
     .status .visitor-form{
         width: 440px;
-        height: 200px;
     }
 
     .contact .facebook-contact{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .facebook-contact > a > .facebook-icon{
-        font-size: 2rem;
-        color: black;
-        opacity: 0.8;
-    }
-
-    .facebook-contact > .fbGroup-link{
-        color: black;
-        padding-left: 10px;
     }
 }
 
@@ -216,7 +178,6 @@ body > .contact{
 
     .team > .member > .all-members{
         width: 250px;
-        margin-top: 20px;
     }
 
     /* icon for team member */
@@ -240,17 +201,6 @@ body > .contact{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .facebook-contact > a > .facebook-icon{
-        font-size: 2rem;
-        color: black;
-        opacity: 0.8;
-    }
-
-    .facebook-contact > .fbGroup-link{
-        color: black;
-        padding-left: 10px;
     }
 }
 
@@ -298,38 +248,7 @@ body > .contact{
         align-items: center;
         justify-content: center;
     }
-
-    .facebook-contact > a > .facebook-icon{
-        font-size: 2rem;
-        color: black;
-        opacity: 0.8;
-    }
-
-    .facebook-contact > .fbGroup-link{
-        color: black;
-        padding-left: 10px;
-    }
 }
-
-/* for large screen height */
-@media screen and (min-height: 900px){
-
-    /* undercinstruction icon */
-    .status > .imgConstruction{
-        margin: 0 20px;
-    }
-
-    .status > .status-statement > p{
-        font-size: 2rem;
-    }
-
-
-    .status .visitor-form{
-        margin-left: 40px;
-    }
-
-}
-
 
 .status{
     display: flex;
@@ -339,6 +258,26 @@ body > .contact{
     padding: 0;
     margin: 0;
 }
+
+.facebook-contact > a > .facebook-icon{
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+}
+
+.facebook-contact .facebook-icon:link, .contact p .facebook-link:link {
+    text-decoration: none;
+}
+
+.contact p .facebook-link{
+    color: blue;
+    opacity: 0.8;
+}
+
+.facebook-contact .facebook-icon:hover{
+    opacity: 1;
+}
+
 
 .visitor-form{
 	background: #FAFAFA;
@@ -386,4 +325,5 @@ body > .contact{
 .btnSubmit{
     border-radius: 5px;
     width: 50%;
+    margin-top: 10px;
 }
